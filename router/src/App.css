@@ -1,0 +1,271 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:ital,wght@0,300;1,200&family=Roboto:wght@300&display=swap');
+
+
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    overflow-y: scroll;
+    color: rgb(255, 255, 255);
+    padding-bottom: 2rem;
+}
+
+.Img_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13rem;
+}
+
+.StarWarImg{
+  width: 100%;
+  max-width: 45rem;
+  width: 450px;
+  height: 75px;
+  margin-top: -40px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .StarWarLoader {
+  animation: StarWarLoader-spin infinite 2.5s linear;
+  }
+}
+@keyframes StarWarLoader-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loader-container{
+  position: absolute;
+  right: 47%;
+  top: 50%;
+}
+
+.StarWarLoader {
+
+  height: 13vmin;
+  pointer-events: none;
+  filter: invert(95%) sepia(82%)saturate(4800%)hue-rotate(359deg)brightness(104%)contrast(106%)
+
+}
+.movieCard_wrapper{
+  width: 100%;
+ margin: -40px auto 0px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.movieCard_Container {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap:1.9em;
+ justify-content: center;
+ align-items: center;
+ margin: auto;
+ width: 80%;
+
+
+}
+.movieCard_list:nth-of-type(1){
+  background-image: url("https://finmavis.github.io/swapi-task/static/media/bg-card-1.0c96fd00.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  padding: 15px;
+}
+.movieCard_list:nth-of-type(2){
+  background-image: url("https://finmavis.github.io/swapi-task/static/media/bg-card-2.b0a7b209.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  padding: 15px;
+}
+.movieCard_list:nth-of-type(2){
+  background-image: url("https://finmavis.github.io/swapi-task/static/media/bg-card-3.1914d853.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  padding: 15px;
+}
+.movieCard_list:nth-of-type(3){
+  background-image: url("https://finmavis.github.io/swapi-task/static/media/bg-card-2.b0a7b209.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  padding: 15px;
+}
+.movieCard_list:nth-of-type(4){
+  background-image: url("https://finmavis.github.io/swapi-task/static/media/bg-card-4.c21c4d4b.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  padding: 15px;
+}
+.movieCard_list:nth-of-type(5){
+  background-image: url("https://finmavis.github.io/swapi-task/static/media/bg-card-5.67d061d6.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  padding: 15px;
+}
+.movieCard_list:nth-of-type(6){
+  background-image: url("https://finmavis.github.io/swapi-task/static/media/bg-card-6.b4fea25d.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  padding: 15px;
+}
+ .movieCard_Container  li{
+  list-style-type: none;
+  width: 340px;
+  height: auto;
+ padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  }
+  .movieCard_Container  li:hover{
+    box-shadow: rgb(32, 152, 209) 0px 0px 10px 3px, rgb(0, 0, 0) 0px 0px 10px;
+  }
+.movie-date-title{
+display: flex;
+gap: 2px;
+flex-direction: column;
+margin-bottom: 1.7rem;
+font-family: 'Open Sans', sans-serif;
+  
+}
+.movie-date-title a{
+  text-decoration:none;
+  color:white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.movie-date-title span{
+  color: rgb(157, 157, 157);
+  font-size: 1.1rem;
+}
+.crawl{
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+
+  height: 17ch;
+  overflow: hidden;
+
+    margin-top: -10px;
+    margin-bottom: 2rem;
+    line-height: 24px;
+    overflow-wrap: break-word;
+    white-space: normal;
+      text-overflow: ellipsis;
+}
+.moreInfo{
+  border-top: 2px solid rgb(142, 46, 46);
+  padding-top: 5px;
+}
+.moreInfo a{
+ 
+  font-size: 14px;
+  text-transform: capitalize;
+
+  color: rgb(255, 232, 31);
+  text-decoration: none;
+}
+
+/* -----------movieDetail----------- */
+.movieDetail{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;
+
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(35, 35, 35);
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  padding: 30px;
+  border-radius: 0.5rem;
+  font-family: 'Open Sans', sans-serif;
+}
+.list-link {
+
+
+  display: flex;
+ justify-content:flex-start;
+  align-items: center;
+margin-bottom: 10px;
+}
+.list-link a{
+  color: rgb(157, 157, 157);
+  text-decoration: none;
+  font-size: 18px;
+}
+header{
+  margin-bottom: 30px;
+
+}
+header h2{
+ 
+    font-size:  1.4em;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 500;
+}
+header p{
+
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.description{
+  margin-bottom: 30px;
+}
+
+.content-container p{
+  letter-spacing: 1.5px;
+
+  font-size: 16px;
+
+ 
+    letter-spacing: 1px;
+
+}
+.content-container{
+  margin-bottom: 3rem;
+    padding-top: 30px;
+    border-top: 2px solid rgb(60, 60, 60);
+}
+  .content-container h4{
+  font-size: 17px;
+  color: rgb(157, 157, 157);
+  margin-bottom: 1.5rem;
+  font-weight: bold
+}
+ .content-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 1.8rem;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  gap: 3px;
+ 
+}
+.content-wrapper li{
+  font-size: 16px;
+  letter-spacing: 1px;
+
+}
